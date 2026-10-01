@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<title>Кафе «Уют»</title>
+<style>
+  :root{
+    --bg:#faf6f1; --text:#2e2420; --accent:#a9673a; --card:#ffffff; --muted:#7a6a5e;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){ --bg:#1c1714; --text:#f0e8e0; --accent:#d68a57; --card:#241d19; --muted:#b3a396; }
+  }
+  :root[data-theme="dark"]{ --bg:#1c1714; --text:#f0e8e0; --accent:#d68a57; --card:#241d19; --muted:#b3a396; }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  body{
+    background:var(--bg); color:var(--text);
+    font-family:Georgia,'Times New Roman',serif;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  header{
+    padding:60px 20px 40px; text-align:center;
+    border-bottom:1px solid rgba(122,106,94,0.2);
+  }
+  header h1{ font-size:2.4rem; letter-spacing:2px; color:var(--accent); }
+  header p{ color:var(--muted); margin-top:10px; font-style:italic; }
+
+  nav{
+    display:flex; justify-content:center; gap:24px; flex-wrap:wrap;
+    padding:16px; background:var(--card);
+    position:sticky; top:env(safe-area-inset-top,0px); z-index:10;
+    border-bottom:1px solid rgba(122,106,94,0.15);
+  }
+  nav a{ color:var(--text); text-decoration:none; font-size:0.95rem; }
+  nav a:hover{ color:var(--accent); }
+
+  section{ max-width:800px; margin:0 auto; padding:50px 20px; }
+  section h2{ color:var(--accent); margin-bottom:20px; font-size:1.6rem; }
+
+  .menu-item{
+    display:flex; justify-content:space-between; gap:16px;
+    padding:14px 0; border-bottom:1px dashed rgba(122,106,94,0.25);
+  }
+  .menu-item span:last-child{ color:var(--accent); white-space:nowrap; }
+  .menu-item div p{ color:var(--muted); font-size:0.9rem; margin-top:4px; }
+
+  .about p{ color:var(--muted); line-height:1.7; }
+
+  .contact{ text-align:center; }
+  .contact p{ margin:6px 0; color:var(--muted); }
+
+  footer{
+    text-align:center; padding:30px 20px; color:var(--muted);
+    font-size:0.85rem; border-top:1px solid rgba(122,106,94,0.15);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Кафе «Уют»</h1>
+  <p>тёплый кофе, домашняя выпечка</p>
+</header>
+
+<nav>
+  <a href="#menu">Меню</a>
+  <a href="#about">О нас</a>
+  <a href="#contact">Контакты</a>
+</nav>
+
+<section id="menu">
+  <h2>Меню</h2>
+
+  <div class="menu-item">
+    <div>
+      <strong>Капучино</strong>
+      <p>эспрессо, взбитое молоко</p>
+    </div>
+    <span>900 ₸</span>
+  </div>
+
+  <div class="menu-item">
+    <div>
+      <strong>Латте</strong>
+      <p>мягкий кофе с молочной пенкой</p>
+    </div>
+    <span>950 ₸</span>
+  </div>
+
+  <div class="menu-item">
+    <div>
+      <strong>Чизкейк</strong>
+      <p>классический нью-йоркский</p>
+    </div>
+    <span>1500 ₸</span>
+  </div>
+
+  <div class="menu-item">
+    <div>
+      <strong>Круассан</strong>
+      <p>свежая выпечка каждое утро</p>
+    </div>
+    <span>800 ₸</span>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>О нас</h2>
+  <p>Кафе «Уют» — небольшое место, где можно отдохнуть от суеты города за чашкой хорошего кофе. Мы обжариваем зёрна сами и печём десерты каждый день по утрам.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Контакты</h2>
+  <p>г. Актау, ул. Приморская, 12</p>
+  <p>Ежедневно 8:00–22:00</p>
+  <p>+7 (700) 123-45-67</p>
+  <p>Made by Madi</p>
+  <p>kadieke sosi moi penis</p>
+</section>
+
+<footer>
+  © 2026 Кафе «Уют»
+</footer>
+<br>
+<audio controls src="eee-kutak-bash.mp3">
+
+</audio>
+</body>
+</html>
